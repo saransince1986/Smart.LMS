@@ -10,7 +10,7 @@
 .pace-inactive { display: none; }
 
 .pace .pace-progress {
-    background: #ee5ae9;
+    background: #ThemeColorBrighter40#;
     height: 2px;
     position: fixed;
     right: 100%;

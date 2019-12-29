@@ -37,37 +37,37 @@ body:not(.pace-done) > :not(.pace), body:not(.pace-done):before, body:not(.pace-
     z-index: 2000;
 }
 
-.pace .pace-progress {
-    -moz-background-clip: padding;
-    -moz-border-radius: 2px;
-    -moz-box-sizing: border-box;
-    -ms-box-shadow: 120px 0 #fff, 240px 0 #fff;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -webkit-background-clip: padding-box;
-    -webkit-border-radius: 2px;
-    -webkit-box-shadow: 120px 0 #fff, 240px 0 #fff;
-    -webkit-box-sizing: border-box;
-    -webkit-transform: translate3d(0, 0, 0);
-    background: #7F3F98;
-    background-clip: padding-box;
-    border-radius: 2px;
-    box-shadow: 120px 0 #fff, 240px 0 #fff;
-    box-sizing: border-box;
-    color: #7F3F98;
-    display: block;
-    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    height: 14px;
-    line-height: 60px;
-    margin-right: -7px;
-    position: absolute;
-    right: 100%;
-    top: 7px;
-    transform: translate3d(0, 0, 0);
-    width: 93%;
-}
+    .pace .pace-progress {
+        -moz-background-clip: padding;
+        -moz-border-radius: 2px;
+        -moz-box-sizing: border-box;
+        -ms-box-shadow: 120px 0 #fff, 240px 0 #fff;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-background-clip: padding-box;
+        -webkit-border-radius: 2px;
+        -webkit-box-shadow: 120px 0 #fff, 240px 0 #fff;
+        -webkit-box-sizing: border-box;
+        -webkit-transform: translate3d(0, 0, 0);
+        background: #ThemeColor#;
+        background-clip: padding-box;
+        border-radius: 2px;
+        box-shadow: 120px 0 #fff, 240px 0 #fff;
+        box-sizing: border-box;
+        color: #ThemeColor#;
+        display: block;
+        font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        height: 14px;
+        line-height: 60px;
+        margin-right: -7px;
+        position: absolute;
+        right: 100%;
+        top: 7px;
+        transform: translate3d(0, 0, 0);
+        width: 93%;
+    }
 
 .pace .pace-progress:after {
     content: attr(data-progress-text);
@@ -301,7 +301,7 @@ body:not(.pace-done) > :not(.pace), body:not(.pace-done):before, body:not(.pace-
 
 .pace .pace-activity {
     border-radius: 10px;
-    box-shadow: inset 0 0 0 2px #7F3F98, inset 0 0 0 7px #FFF;
+    box-shadow: inset 0 0 0 2px #ThemeColor#, inset 0 0 0 7px #FFF;
     height: 28px;
     position: absolute;
     width: 100%;

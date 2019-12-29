@@ -1,4 +1,5 @@
 ﻿using System.Web.Optimization;
+using SmartLMS.WebUI.App_Start.StyleTransformations;
 
 namespace SmartLMS.WebUI
 {
@@ -56,15 +57,27 @@ namespace SmartLMS.WebUI
                 "~/Content/themes/notheme/jquery-ui.structure.css",
                 "~/Content/addtohomescreen/addtohomescreen.css"
             ));
-
-            bundles.Add(new StyleBundle("~/Content/csscustom").Include(
+            var cssCustom = new StyleBundle("~/Content/csscustom").Include(
                 "~/Content/material-kit/material-kit.css",
                 "~/Content/toastr/toastr.min.css",
                 "~/Content/jquery.dropdown/jquery.dropdown.css",
                 "~/Content/multi-carousel.css",
                 "~/Content/figure-caption.css",
                 "~/Content/listgroup.css",
-                "~/Content/Site.css"));
+                "~/Content/animated-spinner/animated-spinner.css",
+                "~/Content/animated-spinner/inverted-animated-spinner.css",
+                "~/Content/Site.css");
+
+            cssCustom.Transforms.Add(new CssVariableReplacer());
+            bundles.Add(cssCustom);
+
+            var loadingBar = new StyleBundle("~/Content/loadingbar").Include("~/content/pace/loading-bar.css");
+            loadingBar.Transforms.Add(new CssVariableReplacer());
+            bundles.Add(loadingBar);
+
+            var loadingMinimal = new StyleBundle("~/Content/loadingminimal").Include("~/content/pace/minimal.css");
+            loadingMinimal.Transforms.Add(new CssVariableReplacer());
+            bundles.Add(loadingMinimal);
 
             // dropZone styles
             bundles.Add(new StyleBundle("~/Content/dropzone/dropZoneStyles").Include(
